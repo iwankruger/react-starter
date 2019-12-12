@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Scaffold bootstrapped application
+#npm install -g create-react-app
+#create-react-app react-starter
+
 ## Available Scripts
 
 In the project directory, you can run:
