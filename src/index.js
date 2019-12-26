@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import thunk from 'redux-thunk';
 import reducers from './reducers';
 import PostIndex from './components/PostIndex';
+import PostShow from './components/PostShow';
 import Screen1 from './components/Screen1';
 import Screen2 from './components/Screen2';
 
@@ -17,7 +18,7 @@ ReactDOM.render(
       <div>
         <Switch>
           <Route path="/posts/new" component={Screen2} />
-          <Route path="/posts/:id" component={Screen1} />
+          <Route path="/posts/:id" component={PostShow} />
           <Route path="/" component={PostIndex} />
         </Switch>
       </div>
