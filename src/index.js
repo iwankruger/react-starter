@@ -7,8 +7,7 @@ import thunk from 'redux-thunk';
 import reducers from './reducers';
 import PostIndex from './components/PostIndex';
 import PostShow from './components/PostShow';
-import Screen1 from './components/Screen1';
-import Screen2 from './components/Screen2';
+import PostNew from './components/PostNew';
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
@@ -17,7 +16,7 @@ ReactDOM.render(
     <BrowserRouter>
       <div>
         <Switch>
-          <Route path="/posts/new" component={Screen2} />
+          <Route path="/posts/new" component={PostNew} />
           <Route path="/posts/:id" component={PostShow} />
           <Route path="/" component={PostIndex} />
         </Switch>
